@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#252421">
+<title>something i made for you</title>
+<style>
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:#e9e7e2;color:#46443f;font-family:Arial,Helvetica,sans-serif}button,a{font:inherit}button{cursor:pointer}.page{min-height:100vh;padding:42px 22px 70px;display:none;justify-content:center;align-items:center}.page.active{display:flex}.inner{width:min(100%,430px)}.mono{font-family:"Courier New",monospace}.home{text-align:center}.home-photo{width:min(100%,330px);margin:0 auto 34px;background:#f7f6f2;padding:12px 12px 18px;box-shadow:0 18px 40px rgba(60,57,51,.12);transform:rotate(-1deg)}.home-photo img{width:100%;height:390px;object-fit:cover;display:block;filter:saturate(.88) contrast(.98)}.caption{margin-top:14px;font:14px "Courier New",monospace;color:#4c4944}.kicker{font:11px "Courier New",monospace;letter-spacing:2px;text-transform:uppercase;color:#8a867f;margin-bottom:22px}.home h1{font:normal 25px/1.48 Georgia,"Times New Roman",serif;margin:0 auto;max-width:390px;color:#393732}.home-copy{margin:27px auto 0;max-width:365px;font-size:13px;line-height:1.85;color:#77736c}.rule{width:45px;height:1px;background:#aaa59d;margin:32px auto}.disclaimer{max-width:350px;margin:0 auto 28px;font:14px/1.8 "Courier New",monospace;color:#77736c}.btn{display:inline-block;border:0;border-radius:3px;background:#4a4844;color:#f3f1ed;padding:14px 22px;text-decoration:none;font:12px "Courier New",monospace;transition:.22s ease}.btn:hover{background:#33322f;transform:translateY(-2px)}.small-note{margin-top:48px;font:10px "Courier New",monospace;color:#aaa59e}.map-page{align-items:flex-start;padding-top:55px}.map-head{text-align:center;margin-bottom:28px}.map-head h2{margin:0;font:normal 24px/1.35 Georgia,serif;color:#393732}.map-head p{margin:9px 0 0;font:11px "Courier New",monospace;color:#929087}.map{position:relative;width:min(100%,410px);height:620px;margin:0 auto}.center{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:132px;height:132px;border:1px solid #b8b4ad;border-radius:50%;background:#d8d5cf;display:flex;align-items:center;justify-content:center;text-align:center;z-index:2}.center span{font:12px/1.7 "Courier New",monospace;color:#5f5b55}.center strong{font-weight:normal;font-size:14px;color:#3f3c37}.line{position:absolute;height:1px;background:#b9b5ae;transform-origin:left center;z-index:1}.l1{width:128px;left:41%;top:41%;transform:rotate(-132deg)}.l2{width:125px;left:59%;top:41%;transform:rotate(-48deg)}.l3{width:125px;left:41%;top:55%;transform:rotate(164deg)}.l4{width:125px;left:59%;top:55%;transform:rotate(16deg)}.l5{width:118px;left:50%;top:61%;transform:rotate(90deg)}.node{position:absolute;width:132px;min-height:92px;background:#f5f4f0;border:1px solid #cbc7bf;padding:16px 10px;text-align:center;box-shadow:0 10px 25px rgba(60,57,51,.07);z-index:3;transition:.2s ease}.node:hover{transform:translateY(-3px);background:#faf9f6}.node .num{display:block;font:10px "Courier New",monospace;color:#99948b;margin-bottom:10px}.node .title{display:block;font:13px "Courier New",monospace;color:#4d4943}.n1{left:0;top:65px}.n2{right:0;top:125px}.n3{left:0;top:315px}.n4{right:0;top:360px}.n5{left:50%;bottom:35px;transform:translateX(-50%)}.n5:hover{transform:translateX(-50%) translateY(-3px)}.map-foot{text-align:center;margin-top:14px;font:10px "Courier New",monospace;color:#aaa59e}.thought{align-items:flex-start;padding-top:38px}.thought .inner{max-width:430px}.back{border:0;background:none;padding:0;color:#7c7871;font:11px "Courier New",monospace;margin-bottom:22px}.back:hover{color:#3e3b36}.photo-card{background:#f5f4f0;padding:11px 11px 16px;box-shadow:0 15px 32px rgba(60,57,51,.1)}.photo-card img{width:100%;height:470px;object-fit:cover;display:block}.photo-index{margin:15px 0 0;font:10px "Courier New",monospace;color:#98938a}.thought h3{font:normal 23px/1.45 Georgia,serif;margin:30px 0 17px;color:#3e3b36}.thought p{font-size:13px;line-height:1.9;color:#77736c;margin:0 0 26px}.next{display:inline-block;border:0;border-bottom:1px solid #77736c;background:none;padding:0 0 7px;color:#55514b;font:11px "Courier New",monospace}.next:hover{color:#292722}@media(max-width:380px){.home-photo img{height:340px}.home h1{font-size:22px}.map{height:600px}.node{width:122px}.photo-card img{height:420px}}
+
+/* ---------- INTIMATE ENDING ---------- */
+.ending{min-height:100vh;background:#e7e5e0}
+.ending-inner{min-height:calc(100vh - 80px);display:flex;flex-direction:column;width:min(100%,430px)}
+.ending-spacer{flex:1;min-height:70px}
+.ending-copy{text-align:center;padding:20px 5px}
+.ending-line{margin:0 auto;color:#67635d;opacity:0;transform:translateY(12px);animation:endingReveal .9s ease forwards}
+.ending-line.line-1{font:normal 18px/1.6 Georgia,serif;animation-delay:.35s}
+.ending-line.line-2{margin-top:16px;font:normal 18px/1.6 Georgia,serif;animation-delay:1.1s}
+.ending-line.line-3{margin-top:38px;font:13px/1.8 "Courier New",monospace;color:#7d7972;animation-delay:2s}
+.ending-line.line-4{margin-top:4px;font:normal 20px/1.55 Georgia,serif;color:#3f3c37;animation-delay:2.7s}
+.ending-rule{width:36px;height:1px;background:#aaa59d;margin:34px auto;opacity:0;animation:endingFade .7s ease forwards;animation-delay:3.6s}
+.ending-line.line-5{font:12px "Courier New",monospace;color:#77736c;animation-delay:4.15s}
+.ending-line.line-6{margin-top:7px;font:normal 19px/1.55 Georgia,serif;color:#3f3c37;animation-delay:4.7s}
+.ending-footer{flex:1;min-height:95px;display:flex;align-items:flex-end;justify-content:center;padding-bottom:12px;font:10px "Courier New",monospace;letter-spacing:.4px;color:#aaa59e;opacity:0;animation:endingFade 1s ease forwards;animation-delay:5.6s}
+@keyframes endingReveal{to{opacity:1;transform:translateY(0)}}
+@keyframes endingFade{to{opacity:1}}
+
+</style>
+</head>
+<body>
+<section id="home" class="page active home"><div class="inner">
+<div class="home-photo"><img src="https://i.ibb.co/qZ9cp0K/7b64817263ffeb1c4873d3b1bf99b0d0.jpg" alt="a photo of you"><div class="caption">what i write about you</div></div>
+<div class="kicker">a small archive of something i cannot explain properly</div>
+<h1>i wish you knew how much our little conversations and the time we spend together mean to me. somehow, you're my favorite person without even trying.</h1>
+<p class="home-copy">there are so many little things about you that stay in my mind longer than they probably should. the way you talk, the way you make ordinary moments feel different, and simply having you around.</p>
+<div class="rule"></div><p class="disclaimer">Mohon maklum, website ini dibuat oleh orang yang sedang jatuh cinta dan kehilangan objektivitas.</p>
+<button class="btn" onclick="showPage('map')">open what i've been meaning to tell you</button><div class="small-note">made with affection and questionable objectivity.</div>
+</div></section>
+<section id="map" class="page map-page"><div class="inner"><div class="map-head"><h2>things i think about when i think of you</h2><p>apparently, there are quite a few.</p></div><div class="map"><div class="line l1"></div><div class="line l2"></div><div class="line l3"></div><div class="line l4"></div><div class="line l5"></div><div class="center"><span><strong>YOU</strong><br>somehow, the<br>common denominator</span></div>
+<button class="node n1" onclick="showPage('thought1')"><span class="num">(01)</span><span class="title">i love you</span></button><button class="node n2" onclick="showPage('thought2')"><span class="num">(02)</span><span class="title">i adore you</span></button><button class="node n3" onclick="showPage('thought3')"><span class="num">(03)</span><span class="title">you calm me</span></button><button class="node n4" onclick="showPage('thought4')"><span class="num">(04)</span><span class="title">i cherish you</span></button><button class="node n5" onclick="showPage('thought5')"><span class="num">(05)</span><span class="title">i choose you</span></button></div><div class="map-foot">tap a thought.</div></div></section>
+<section id="thought1" class="page thought"><div class="inner"><button class="back" onclick="showPage('map')">← back to the map</button><div class="photo-card"><img src="https://i.ibb.co/sp4txZNS/559063ee1616d65cc7c068ca4faa8942.jpg" alt="memory one"><div class="photo-index">(01) / i love you</div></div><h3>“you make being around you feel easy.”</h3><p>i love the quiet kind of happiness i get from you. nothing has to be extraordinary. sometimes just talking to you, hearing from you, or knowing you're there is already enough to make my day feel a little better.</p><button class="next" onclick="showPage('thought2')">next thought →</button></div></section>
+<section id="thought2" class="page thought"><div class="inner"><button class="back" onclick="showPage('map')">← back to the map</button><div class="photo-card"><img src="https://i.ibb.co/DNFBC2s/2917b5580605fa8d7f586add6d01a802.jpg" alt="memory two"><div class="photo-index">(02) / i adore you</div></div><h3>“you make ordinary things feel worth remembering.”</h3><p>there are little things about you that you probably consider ordinary, but i remember them anyway. the smallest moments have a way of staying with me, simply because they happened with you.</p><button class="next" onclick="showPage('thought3')">next thought →</button></div></section>
+<section id="thought3" class="page thought"><div class="inner"><button class="back" onclick="showPage('map')">← back to the map</button><div class="photo-card"><img src="https://i.ibb.co/8pBp693/d24be663a346397fa6183c0651d88e13.jpg" alt="memory three"><div class="photo-index">(03) / you calm me</div></div><h3>“somehow, you make the noise in my head quieter.”</h3><p>there is something about being with you that feels peaceful. i don't always need an answer or a solution. sometimes i just need your presence, and somehow things feel a little less heavy.</p><button class="next" onclick="showPage('thought4')">next thought →</button></div></section>
+<section id="thought4" class="page thought"><div class="inner"><button class="back" onclick="showPage('map')">← back to the map</button><div class="photo-card"><img src="https://i.ibb.co/HL6CMr4v/a9976887a6e171f2e73b69d59d96b654.jpg" alt="memory four"><div class="photo-index">(04) / i cherish you</div></div><h3>“i notice more about you than i probably let on.”</h3><p>i remember the way you speak, the little habits you have, the things you like, and the moments when you don't even realize you're being adorable. i keep those things quietly, because they matter to me.</p><button class="next" onclick="showPage('thought5')">next thought →</button></div></section>
+<section id="thought5" class="page thought"><div class="inner"><button class="back" onclick="showPage('map')">← back to the map</button><div class="photo-card"><img src="https://i.ibb.co/hxYsCXhc/d0befcdcad3d689472a8ab79e483f368.jpg" alt="memory five"><div class="photo-index">(05) / i choose you</div></div><h3>“if i had to choose again, i'd still find my way to you.”</h3><p>out of all the people i could have met, somehow i met you. and if life gave me the chance to go through it all again, i'd still want the same conversations, the same laughs, the same ordinary moments, and you at the end of them.</p><button class="next" onclick="showPage('thought6')">one more thing →</button></div></section>
+<section id="thought6" class="page thought ending">
+  <div class="inner ending-inner">
+    <button class="back" onclick="showPage('map')">← back to the map</button>
+    <div class="ending-spacer"></div>
+    <div class="ending-copy">
+      <p class="ending-line line-1">if you made it this far,</p>
+      <p class="ending-line line-2">then you probably know by now...</p>
+      <p class="ending-line line-3">you're not just someone i wrote about.</p>
+      <p class="ending-line line-4">you're someone i genuinely cherish.</p>
+      <div class="ending-rule"></div>
+      <p class="ending-line line-5">that's all.</p>
+      <p class="ending-line line-6">i just wanted you to know.</p>
+    </div>
+    <div class="ending-footer"><span>— end of archive</span></div>
+  </div>
+</section>
+<script>function showPage(id){document.querySelectorAll('.page').forEach(p=>p.classList.remove('active'));const t=document.getElementById(id);if(t){t.classList.add('active');window.scrollTo(0,0)}}</script>
+</body>
+</html>
